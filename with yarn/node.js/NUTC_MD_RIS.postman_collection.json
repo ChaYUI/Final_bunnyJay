@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "52fccc7e-ca13-4b7a-9160-ebd092485476",
+		"name": "NUTC_MD_RIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3310/api/mongo/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3310",
+					"path": [
+						"api",
+						"mongo",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3310/api/mongo/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3310",
+					"path": [
+						"api",
+						"mongo",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CTCNV底家啦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3310/api/mongo/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3310",
+					"path": [
+						"api",
+						"mongo",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "建立DB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3310/api/mongo/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3310",
+					"path": [
+						"api",
+						"mongo",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CTCNV底家啦 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"store\": [\"壽司\"],\n      \"storssse\": [\"壽司\"]\n\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3310/ctcnv/addone",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3310",
+					"path": [
+						"ctcnv",
+						"addone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CTCNV廣告新增與修改",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n\t\"storeName\":\t{\n\t\t\"title\": \"鼎捷軟d件(越南)責任有限公司\"\n\t},\n\t\"newData\":{\n\t        \"title\": \"鼎捷軟d件(越南)責任有限公司\",\n            \"post_time\": \"2019.09.04\",\n            \"expire_time\": \"2019.09.03\",\n            \"content\": \"\",\n            \"img\": \"\"\n\t}\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3310/ctcnv/ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3310",
+					"path": [
+						"ctcnv",
+						"ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "中出資料庫，有就覆蓋，沒有就射",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n\t        \"title\": \"多媒體設計系教室\",\n            \"date\": \"2019.09.04\",\n            \"expire_date\": \"2019.09.10\",\n            \"content\": \"\",\n            \"id\":\"\",\n            \"userName\": \"許嘉哲\",\n            \"img\": \"http://localhost:3900/public/d6bf0ab0-e3ab-4e00-b1a5-7c9f2224b2a9.png\",\n\t\t\t\"disable\": false\n\n\t}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3310/nutc/ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3310",
+					"path": [
+						"nutc",
+						"ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "讀取你射進去的資料",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"store\": [\"壽司\"],\n      \"storssse\": [\"壽司\"]\n\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3310/ctcnv/ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3310",
+					"path": [
+						"ctcnv",
+						"ad"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
