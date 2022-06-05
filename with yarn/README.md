@@ -1,5 +1,4 @@
 # nutc-md-ris
-### 這個切版超過100分
 ## Project setup
 ```
 yarn install
